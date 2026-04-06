@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //primitive : single value(imutable)
+        //string/number/bool/null/undefined/symbol/bight
+        let name ='krishna';
+        console.log(name);
+        console.log(typeof(name));
+        let age =20;
+        let ismarried=false;
+        let education;
+        console.log(ismarried);
+        console.log(typeof(ismarried));
+
+        //bight
+let salary=BigInt(23456789098765432)
+console.log(salary);
+
+       //symbol
+        
+        let name1=Symbol("vikas");
+        let name2=Symbol("vikas");
+        console.log(name1==name2);
+
+        //non primitive : refrence/object (mutable)
+        //object/array/funtion
+        //object () an object is collection of its keys and value
+
+        let student={
+
+        name:"vikas",
+        age:23,
+        ismarrrid:true,
+        address:{
+            streetno:23,
+            area: "+indrapuram",
+            pincode:25008,
+            
+        },
+        course:"b.tech",
+        branch:"CSE",
+        year:2025
+
+        };
+
+        console.log(student);
+        //access object`s here / property
+        //string dot rotation
+
+        console.log(student.name +" " + student.age + " " + student.address.city);
+        console.log(typeof(student));
+        console.log('age' in student);
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+    
+</body>
+
+</html>

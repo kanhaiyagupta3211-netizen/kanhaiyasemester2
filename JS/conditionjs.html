@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional statement</title>
+    <script>
+
+        //conditional statement
+        //Conditional statements in JavaScript control the flow of a program by executing different blocks of code based on whether a condition is true or false. 
+
+        //if.....
+        //// code to execute if condition is true
+
+        let age=23;
+        if(age>=18){
+            console.log("valid age for vote casting");
+        }
+
+        //if.....else
+        //f...else statement: Executes the if block if the condition is true, and the else block if the condition is false.
+
+        let myage=45;
+        if(myage<18){
+            console.log("wait for next year");
+        }
+        else{
+            console.log("you are eligible for voting");
+        }
+
+        //switch statement: Evaluates an expression once and compares its value against multiple case labels. It is often a cleaner alternative to long if...else if chains when comparing a single variable against many fixed values.
+
+        let grade="C";
+        switch(grade){
+            case'A':result="first division";
+            break;
+
+            case'B':result="second division";
+            break;
+
+            case'C':result="third division";
+            break;
+
+            default:result="fail";
+        }
+        console.log(result);
+
+        //if...else if...else statement: Checks multiple conditions in sequence. It executes the first block whose condition evaluates to true.
+
+        let marks=45;
+
+        if(marks>=60){
+            console.log("first div marks");
+
+        }
+
+        else if(marks<60 && marks>=40){
+            console.log("second div marks");
+        }
+
+        
+        else if(marks<40 && marks>=30){
+            console.log("third div marks");
+        }
+
+        else{
+            console.log("fail");
+        }
+        
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
