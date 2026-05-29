@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //primitive : single value (immuatable)
+            // string, number, boolean, null, undefined, symbol, bigint
+
+        // non-primitive : multiple value (mutable)
+            // object, array, function
+
+        let name = 'Rishika';
+        console.log(name);
+        console.log(typeof name);
+
+        let age = 18;
+        console.log(age);
+        console.log(typeof age);
+        
+        let isMarried = false;
+        console.log(isMarried);
+        console.log(typeof isMarried);
+
+        let address = null;
+        console.log(address);
+        console.log(typeof address);
+
+        let education;
+        console.log(education);
+        console.log(typeof education);
+
+        // Bigint
+        let salary= BigInt(48246654268252925);
+        console.log(salary);
+        console.log(typeof salary);
+
+        //Symbol
+        let name1 = Symbol('Rishika');
+        let name2 = 'Rishika';
+        console.log(name1);
+        console.log(typeof name1);
+        console.log(name2);
+        console.log(typeof name2);
+        console.log(name1 === name2); // false, because symbol is unique and immutable
+
+
+        // non-primitive
+        // Object{}- An object is a collection of key-value pairs. It can store multiple values and is mutable.
+
+        let student = {
+            name: 'Rishika',
+            age: 18,
+            isMarried: false,
+            address: {
+                area: 'Gaur City 2',
+                city: 'Greater Noida',
+                state: 'Uttar Pradesh',
+                country: 'India'
+            },
+            course: 'B.Tech',
+            branch: 'CSE DS',
+            year: 2025-2029,
+            getInfo:function(){
+                return "My Education is " + student.course + " in " + student.branch;
+            }
+        }   
+        console.log(student);
+        // accessing object properties
+        console.log(student.name +" "+ student.age  +" "+ student.isMarried);
+        // accessing selective object properties
+        console.log(typeof student);
+        console.log('name' in student); // true
+        // accessing object's key value using dot notation
+        console.log(student['isMarried']); // false
+    </script>
+</body>
+</html>

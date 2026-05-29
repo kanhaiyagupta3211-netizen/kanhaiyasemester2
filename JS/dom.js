@@ -1,24 +1,20 @@
 function result(){
+    let inputValue=document.getElementById('inputData').value;
 
+console.log(inputValue);
+let displayHeading=document.getElementById('text');
+displayHeading.innerHTML=inputValue;
 
+displayHeading.style.color='blue'
 
-let displayheading=document.getElementById('text');
+// change color of body element
 
-displayheading.innerHTML=inputvalue;
-
-displayheading.style.color="red"
-
-//change color of body element
-
-document.getElementsByTagName('body')[0].style.backgroundColor="green";
-
+document.getElementsByTagName('body')[0].style.backgroundColor='green';
 }
-
-//addeventlistener method
 
 let paraBkg=document.getElementById('para');
 
-function colorchange(){
-    paraBkg.stylebackgroundcolor="blue"
+function changeColor(){
+    paraBkg.style.backgroundColor='#'+Math.floor(Math.random()*16777215).toString(16);
 }
-paraBkg.addEventListener('mouseout',colorchange)
+paraBkg.addEventListener('mouseout',changeColor);

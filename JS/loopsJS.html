@@ -3,44 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>loops in js</title>
+    <title>Loops in JS</title>
 </head>
 <body>
     <script>
-        //for loop
-        // JavaScript provides several types of loops to repeatedly execute a block of code until a specified condition is met. These loops are essential for tasks such as iterating over data structures (arrays, objects) or running the same code a specific number of times. //
-        
-        let studentlist=["vikas","vinay","vivek","deepak","sneha","shiva"];
+        // javascript provides several types of loops to repeadely excute a block of code until a specified condition is met.
 
-        for(let i=0;i<studentlist.length;i++){
-            console.log(studentlist[i]);
-
+        // for.... Best used when the number of iterations is known beforehand.
+        let studentList=['Doraemon','Shinchan','Oggy','Nobita','Tom'];
+        for(let i=0; i<studentList.length; i++){
+            console.log(studentList[i]);
         }
 
-         //while loop
-        //In JavaScript, the while loop repeatedly executes a block of code as long as a specified condition evaluates to true. It is an entry-controlled loop, meaning the condition is checked before the code block is executed. //
-
+        // while.... Best used when the number of iterations is not known and the loop needs to continue until a certain condition is met.
         let x=0;
-        while(x<studentlist.length){
-            console.log(studentlist[x]);
-            x++
-
+        while(x<studentList.length){
+            console.log(studentList[x]);
+            x++;
         }
 
-        //for...ofloop
-        //The for...of loop in JavaScript provides a concise way to iterate over the values of iterable objects such as Arrays, Strings, Maps, and Sets. It was introduced in ES6 to simplify iteration compared to the traditional for loop or for...in loop//
-
-        for(let y of studentlist){
+        // for...of.... Best used to iterate over iterable objects like arrays, strings, maps, sets, etc.
+        for(let y of studentList){
             console.log(y);
         }
 
-        let myinfo=["kanhaiya gupta","2025b15410087","cse ds","2","9889496624"]
-
-        for(let j=0;j<myinfo.length;j++){
-            console.log(myinfo[j]);
+        let Rishika={
+            name:'Rishika',
+            age:18,
+            city:'Greater Noida',
         }
-
-
+        console.log(Rishika.name + " is "+Rishika.age+ " years old from "+ Rishika.city);
+        for(let key in Rishika){
+            console.log(key + ": " + Rishika[key]);
+        }
 
     </script>
     

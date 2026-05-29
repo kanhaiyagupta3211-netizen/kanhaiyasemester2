@@ -3,77 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>conditional statement</title>
+    <title>Document</title>
+</head>
+<body>
     <script>
+        // conditional statements in JavaScript allow you to perform different actions based on different conditions. The most common conditional statements are if, else if, and else.
 
-        //conditional statement
-        //Conditional statements in JavaScript control the flow of a program by executing different blocks of code based on whether a condition is true or false. 
+        // if....executes a block of code if a specified condition is true.
+        let age = 23;
 
-        //if.....
-        //// code to execute if condition is true
-
-        let age=23;
-        if(age>=18){
+        if(age >= 18){
             console.log("valid age for vote casting");
+        } 
+
+        // if...else....executes a block of code if a specified condition is true, and another block of code if the condition is false.
+        let myAge = 16;
+        if(myAge >= 18){
+            console.log("valid age for vote casting");
+        } else {
+            console.log("You are a minor");
         }
 
-        //if.....else
-        //f...else statement: Executes the if block if the condition is true, and the else block if the condition is false.
+        // switch case....executes a block of code based on different cases. It is often used as an alternative to multiple if...else statements when you have many conditions to check.
 
-        let myage=45;
-        if(myage<18){
-            console.log("wait for next year");
-        }
-        else{
-            console.log("you are eligible for voting");
-        }
+        let grade = 'A';
 
-        //switch statement: Evaluates an expression once and compares its value against multiple case labels. It is often a cleaner alternative to long if...else if chains when comparing a single variable against many fixed values.
-
-        let grade="C";
         switch(grade){
-            case'A':result="first division";
-            break;
+            case 'A':
+                result="first division";
+                break;
 
-            case'B':result="second division";
-            break;
+            case 'B':
+                result="second division";
+                break;
+                
+            case 'C':
+                result="third division";
+                break;
 
-            case'C':result="third division";
-            break;
-
-            default:result="fail";
+            default:
+                result="fail";
         }
         console.log(result);
 
-        //if...else if...else statement: Checks multiple conditions in sequence. It executes the first block whose condition evaluates to true.
+        // if...else if...else....executes a block of code if a specified condition is true, and another block of code if the condition is false. It allows you to check multiple conditions sequentially.
 
-        let marks=45;
-
-        if(marks>=60){
-            console.log("first div marks");
-
-        }
-
-        else if(marks<60 && marks>=40){
-            console.log("second div marks");
-        }
-
+        let marks = 45;
+        if(marks >= 60){
+            console.log("first division");
+        } 
         
-        else if(marks<40 && marks>=30){
-            console.log("third div marks");
+        else if(marks < 60 && marks >= 40){
+            console.log("second division");
         }
 
-        else{
+        else if(marks < 40 && marks >= 30){
+            console.log("third division");
+        } 
+        
+        else {
             console.log("fail");
         }
-        
 
 
+        let mark={
+            maths:98,
+            english: 95,
+            science: 90,
+            DSA:99,
+            design: 97,
 
+        }
+            average= ( mark.maths + mark.english + mark.science + mark.DSA + mark.design) / 5;
+    
+            if(average >= 80){
+                console.log("Grade A");
+            } 
+            
+
+            
+            else if(average < 80 && average >= 60){
+                console.log("Grade B");
+            }
+
+            else if(average < 60 && average >= 50){
+                console.log("Grade C");
+            } 
+            
+            else {
+                console.log("fail");
+            }
 
     </script>
-</head>
-<body>
-    
 </body>
 </html>
